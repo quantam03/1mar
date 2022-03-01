@@ -1,0 +1,65 @@
+.box{
+    height: 100px;
+    width: 100px;
+    background-color: coral;
+    animation-name:example ;
+    animation-duration: 15s;
+    animation-iteration-count: infinite;
+    position: relative;
+}
+@keyframes example {
+    0%{
+        background-color: coral;
+        top: 0%;
+        left: 10%;
+    }
+    25%{
+        background-color: blue;
+        margin-top: 0px;
+        margin-left: 25vw;
+    }
+    50%{
+        background-color: aqua;
+        margin-left: 25vw;
+        margin-top: 25vh;
+    }
+    75%{
+        background-color: brown;
+        margin-right: 25vw;
+        margin-top: 25vh;
+    }
+    100%{
+        background-color: cadetblue;
+        margin-top: 0%;
+        left:10%
+        
+    }
+}
+.circle{
+    left: 200px;
+    height: 100px;
+    width: 100px;
+    border: 2px solid black;
+    border-radius: 50%;
+    background-color: aqua;
+    animation-name: circle;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    position: relative;
+}
+
+@keyframes circle{
+    0%{
+        top: 0px;
+        background-color: aqua;
+    }
+    50%{
+        background-color: rgb(170, 12, 78);
+        top: 200px;
+        box-shadow:5px 5px 5px 5px rgb(126, 117, 117);
+    }
+
+    100%{
+        top: 0px;
+    }
+}
